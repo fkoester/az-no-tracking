@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "az-no-tracking",
+  "version": "1.0",
+  "description": "Allgemeine Zeitung ohne Tracking-Blocker-Warnung",
+  "content_scripts": [
+    {
+      "matches": ["*://*.allgemeine-zeitung.de/*"],
+      "js": ["az-no-tracking.js"]
+    }
+  ]
+
+}
