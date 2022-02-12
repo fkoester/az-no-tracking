@@ -1,13 +1,26 @@
 {
-  "manifest_version": 2,
-  "name": "az-no-tracking",
-  "version": "1.1",
-  "description": "Allgemeine Zeitung ohne Tracking-Blocker-Warnung",
-  "content_scripts": [
-    {
-      "matches": ["*://*.allgemeine-zeitung.de/*"],
-      "js": ["az-no-tracking.js"]
-    }
-  ]
+    "manifest_version": 2,
+    "name": "az-no-tracking",
+    "version": "1.2",
+    "description": "Nachrichtenportale des VRM ohne Tracking-Blocker-Warnung",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.allgemeine-zeitung.de/*",
+                "*://*.buerstaedter-zeitung.de/*",
+                "*://*.echo-online.de/*",
+                "*://*.hochheimer-zeitung.de/*",
+                "*://*.lampertheimer-zeitung.de/*",
+                "*://*.lauterbacher-anzeiger.de/*",
+                "*://*.main-spitze.de/*",
+                "*://*.mittelhessen.de/*",
+                "*://*.oberhessische-zeitung.de/*",
+                "*://*.wiesbadener-kurier.de/*",
+                "*://*.wiesbadener-tagblatt.de/*",
+                "*://*.wormser-zeitung.de/*"
+            ],
+            "js": ["az-no-tracking.js"]
+        }
+    ]
 
 }
