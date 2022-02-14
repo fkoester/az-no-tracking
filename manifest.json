@@ -1,8 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "az-no-tracking",
-    "version": "1.2",
-    "description": "Nachrichtenportale des VRM ohne Tracking-Blocker-Warnung",
+    "name": "VRM Ad-Blocker-Warnung ausblenden",
+    "version": "1.3",
+    "description": "Blendet auf Nachrichtenportalen der VRM-Gruppe die \"Bitte deaktivieren Sie Ihren Ad-Blocker\"-Warnung aus.",
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+    },
     "content_scripts": [
         {
             "matches": [
