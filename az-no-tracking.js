@@ -7,9 +7,8 @@ function ready(fn) {
 }
 
 ready(() => {
-    document.getElementById('adDefendBG')?.remove();
-    document.getElementById('adDefendWrapper')?.remove();
-    document.getElementById('adBlockerLayer')?.remove()
-    document.body.className = document.body.className.replace('adDefendBodyNoScroll','');
-    document.body.className = document.body.className.replace('fixedBackground','');
+    setInterval(() => {
+        document.querySelector('.adBlockerLayer')?.remove();
+        document.documentElement.className = document.documentElement.className.replace('fixedBackground', '');
+    }, 100);
 });
